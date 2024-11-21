@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	//background-color: grey;
 	color: black;
+	user-select: none;
 }
 
 a {
@@ -131,7 +132,6 @@ header {
 }
 
 /* Get Started Section */
-
 .get-started-section {
 	background-image: 
 		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
@@ -186,7 +186,7 @@ header {
 
 /* How It Works Section */
 .how-it-works {
-	background: #f9f9f9;
+	background: white;
 	text-align: center;
 	padding: 50px 20px;
 	margin-top: -1px;
@@ -227,9 +227,36 @@ header {
 	text-align: center;
 }
 
-.step img {
-	max-width: 300px;
+.step .img-box {
+	width: 300px;
+	height: 300px;
 	border-radius: 30px;
+	border: 0.5px solid lightgrey;
+	background: linear-gradient(45deg, #88343b, #f6c302);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	transition: background-color 0.3s ease; 
+}
+
+.step .img-box:hover {
+	background: linear-gradient(45deg, #88343b, #f6c302);
+}
+
+.step img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+	border-radius: 30px;
+}
+
+.step .img-box:hover img {
+	transform: scale(0.8);
+	border-radius: 23px;
+	border: 10px solid white;
 }
 
 .step h3 {
@@ -272,22 +299,163 @@ header {
 .citu-map-section {
 	display: flex;
 	gap: 20px;
-	padding: 50px 20px;
+	padding: 100px 50px;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
+	//border: 1px solid yellow;
+	position: relative;
+	z-index: 0;
 }
 
-.citu-map-section img {
-	max-width: 500px;
+.citu-map-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: 
+		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
+								rgba(230, 230, 230, 0.7) 10%,
+								rgba(255, 255, 255, 0) 35%,
+								rgba(255, 255, 255, 0) 65%,
+								rgba(230, 230, 230, 0.7) 90%,
+								rgba(255, 255, 255, 1) 100%),
+		url("../img/explore-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.citu-map-section .img-box {
+	width: 550px;
 	border-radius: 30px;
+	border: 1px solid white;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 4px 20px rgba(136, 52, 59, 0.5);
+}
+
+.citu-map-section .img-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+	transition: opacity 0.3s ease;
+}
+
+.citu-map-section .img-box:hover {
+	background-image: url("../img/map-point.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.citu-map-section .img-box:hover img {
+	opacity: 0;
+}
+
+.citu-map-section .content {
+	//border: 1px solid blue;
+	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.citu-map-section .content img {
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.citu-map-section .content h1 {
+	font-size: 55px;
+	letter-spacing: 4px;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 1000px;
+	color: #601420;
+}
+
+
+.citu-map-section .content p {
+	font-size: 23px;
+	letter-spacing: 1px;
+	line-height: 1.6;
+	
 }
 
 /* Visit Now Section */
+.visit-now-section {
+	background-image: 
+		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
+								rgba(230, 230, 230, 0.7) 20%,
+								rgba(255, 255, 255, 0.5) 35%,
+								rgba(255, 255, 255, 0.5) 65%,
+								rgba(230, 230, 230, 0.7) 80%,
+								rgba(255, 255, 255, 1) 100%),
+		url("../img/visit-now-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: auto;
+	aspect-ratio: 1 / 0.35;
+	margin: 55px 0;	
+}
+
+.visit-now-section h1{
+	background: linear-gradient(90deg, #601420, #c59b02, #601420);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 70px;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.visit-now-section p{
+	font-size: 26px;
+	line-height: 1.3;
+	margin: 40px 0px;
+}
 
 /* Footer Section */
 footer {
-	background: #222;
-	color: #ddd;
-	padding: 20px;
+	background: #88343b;
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+}
+
+footer div {
+	border: 1px solid yellow;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer ul li {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	gap: 0;
 }
 
 .footer-content {
