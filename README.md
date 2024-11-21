@@ -16,3 +16,5 @@ palihug niya ko check if same rag orientation og positioning sa inyoha wala pa r
 
 
 
+
+i html sa nako siya una i convert ra nako later
