@@ -1,0 +1,94 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Generated
+ehthumbs.db
+desktop.ini
+*.swp
+*~
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Ignore other build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.props
+*.csproj.AssemblyReference.cache
+*.assets.cache
+*.editorconfig
+*.g.cs
+*.json
+
+# Build and Output directories
+**/bin/
+**/obj/
+bin/
+**/bin/Debug/
+
+obj/
+out/
+dist/
+build/
+Debug/
+Release/
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+
+
+# IDE specific
+.vscode/
+.vs/
+.idea/
+*.sln.ide
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Environment Variables
+.env
+.env.*
+
+# Static files cache
+*.css.map
+*.js.map
+
+# Frontend Framework Specific
+.cache-loader/
+*.pyc
+*.pyo
+
+# Testing
+coverage/
+__pycache__/
+*.coverage
+*.code-workspace
+
+# Git
+*.orig
+*.rej
+*.swp
+*.swo
+*.sqlproj.user
+!*.bat
