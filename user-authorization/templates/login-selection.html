@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeknoFinder - Login</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="login-selection">
+		<div class="container">
+			<div class="back">
+				<button onclick="previousPage();"> <i class="fa fa-arrow-left"></i> BACK </button>
+			</div>
+			
+			<div class="header">
+				<img src="../img/teknofinder-logo.png" width="200px">
+				<div>
+					<h1> Welcome to </h1>
+					<img src="../img/teknofinder-word.png" />
+					<h1> ! </h1>
+				</div>
+				<h3> Let’s help you navigate CIT-U with ease and few taps! </h3>
+			</div>
+			
+			<div class="selection-container">
+				<button class="selection">
+					<a href="../templates/login-email.html">
+						<img src="../img/login-email.png"/> <br/>
+						<span> Log In Using <br/> Email Address </span>
+					</a>
+				</button>
+				
+				<button class="selection">
+					<a href="../templates/login-number.html">
+						<img src="../img/login-number.png"/> <br/>
+						<span> Log In Using <br/> Student Number </span>
+						<p> for CIT-U Students Only </p>
+					</a>
+				</button>
+			</div>
+			
+			<div class="register-link">
+				<span> Don't have an account?
+					<a href="../templates/register-selection.html"> Register Now! </a>
+				<span>
+			</div>
+		</div>
+	</section>
+	
+	<script src="../js/user-auth.js"></script>
+</body>
+</html>
