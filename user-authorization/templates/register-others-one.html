@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeknoFinder - Register</title>
+	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<section class="register-form">
+		<div class="register-container">
+			<div class="back">
+				<button onclick="previousPage();"> <i class="fa fa-arrow-left"></i> BACK </button>
+			</div>
+			
+			<div class="form">
+				<div class="header">
+					<h1>Sign up to </h1> <img src="../img/teknofinder-word.png">
+				</div>
+				
+				<p class="subheader">Sign up to unlock effortless navigation around CIT-U</p>
+
+				<div class="identifier">
+					<h2>PERSONAL INFORMATION</h2>
+					<span>Step 01 of 02</span>
+				</div>
+
+				<form>
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="username" id="username" placeholder="Enter your username" required>
+					</div>
+					
+					<div class="fullname">
+						<div class="form-group">
+							<label for="firstname">First Name</label>
+							<input type="firstname" id="firstname" placeholder="Enter your first name" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="lastname">Last Name</label>
+							<input type="lastname" id="lastname" placeholder="Enter your last name" required>
+						</div>
+					</div>
+					
+					<button class="btn-next">
+						<a href="../templates/register-others-two.html">
+							Next <i class="fa fa-arrow-right"></i>
+						</a>
+					</button>
+					<div class="divider">or register with</div>
+					<button type="button" class="btn-google">
+						<i class="fab fa-google"></i>
+						Register With Google
+					</button>
+				</form>
+				
+				<p class="login-link">Already have an account? <a href="../templates/login-selection.html">Login Now</a></p>
+			</div>
+		</div>
+	</section>
+	
+	<script src="../js/user-auth.js"></script>
+</body>
+</html>

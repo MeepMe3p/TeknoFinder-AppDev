@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TeknoFinder - Login</title>
-	<link rel="stylesheet" href="../css/login.css">
+	<title>TeknoFinder - Register</title>
+	<link rel="stylesheet" href="../css/register.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,46 +15,48 @@
 </head>
 
 <body>
-	<section class="login-form">
-		<div class="login-container">
+	<section class="register-form">
+		<div class="register-container">
 			<div class="back">
 				<button onclick="previousPage();"> <i class="fa fa-arrow-left"></i> BACK </button>
 			</div>
 			
 			<div class="form">
 				<div class="header">
-					<h1>Log In to </h1> <img src="../img/teknofinder-word.png">
+					<h1>Sign up to </h1> <img src="../img/teknofinder-word.png">
 				</div>
 				
-				<p class="subheader">Sign in now to explore the campus, find your way with ease</p>
-				
+				<p class="subheader">Sign up to unlock effortless navigation around CIT-U</p>
+
+				<div class="identifier">
+					<h2>CREATE CREDENTIALS</h2>
+					<span>Step 02 of 02</span>
+				</div>
+
 				<form>
 					<div class="form-group">
-						<label for="email">Email Address</label>
-						<input type="email" id="email" placeholder="Enter your email address" required>
+						<label for="studentnumber">Student Number</label>
+						<input type="studentnumber" id="studentnumber" placeholder="Enter your student number" required>
 					</div>
-					
+
 					<div class="form-group">
 						<label for="password">Password</label>
 						<input type="password" id="password" placeholder="Enter your password" required>
 					</div>
-				  
-					<div class="checkbox-group">
-						<label>
-							<input type="checkbox"> Remember Me
-						</label>
-						<a href="">Forgot Password?</a>
+					
+					<div class="form-group">
+						<label for="confirmpassword">Confirmed Password</label>
+						<input type="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required>
 					</div>
 					
-					<button type="submit" class="btn-login">Log In</button>
-					<div class="divider">or login with</div>
-					<button type="button" class="btn-google">
-						<i class="fab fa-google"></i>
-						Log In With Google
+					<button class="btn-register">
+						<a href="../templates/login-number.html">
+							Register
+						</a>
 					</button>
 				</form>
 				
-				<p class="register-link">Don’t have an account? <a href="../templates/register-selection.html">Register Now</a></p>
+				<p class="login-link">Already have an account? <a href="../templates/login-selection.html">Login Now</a></p>
 			</div>
 		</div>
 	</section>
