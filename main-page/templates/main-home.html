@@ -9,6 +9,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -18,86 +19,228 @@
 			<div>
 				<img src="../img/teknofinder-word.png" height="40px"/>
 			</div>
-			
+
 			<nav>
 				<ul>
-					<li><a href="../templates/main-home.html" class="hoverable">Home</a></li>
+					<li><a href="../templates/main-home.html" class="current-page">Home</a></li>
 					<li><a href="../templates/main-teknomap.html" class="hoverable">TeknoMap</a></li>
 					<li><a href="../templates/main-confessions.html" class="hoverable">Confessions</a></li>
-					<li><a href="../templates/main-aboutus.html" class="current-page">About Us</a></li>
+					<li><a href="../templates/main-aboutus.html" class="hoverable">About Us</a></li>
 					<li><a href="../templates/main-contactus.html" class="hoverable">Contact Us</a></li>
 				</ul>
 			</nav>
-			
-			<div class="auth-buttons">
-				<button class="login-btn">
-					<a href="../../user-authorization/templates/login-selection.html">
-						Log In
-					</a>
-				</button>
-				<button class="signup-btn">
-					<a href="../../user-authorization/templates/register-selection.html">
-						Sign Up
-					</a>
-				</button>
+
+			<div class="profile">
+				<input type="checkbox" id="profile-menu-toggle" hidden>
+				<label for="profile-menu-toggle" class="profile-label">
+					<div class="profile-img">
+						<img src="../img/user-profile.jpg" alt="Profile">
+					</div>
+					<div class="profile-info">
+						<h3>fname + lname</h3>
+						<span>stud_num/email</span>
+					</div>
+				</label>
+
+				<div class="profile-menu">
+					<a href=""><i class="fa fa-user"></i> View Profile</a>
+					<a href=""><i class="fa fa-cog"></i> Settings</a>
+					<a href="" class="log-out"><i class="fa fa-sign-out-alt"></i> Logout</a>
+				</div>
 			</div>
 		</div>
 	</header>
+
     
-	<!-- Get Started Section -->
-	<section class="get-started-section">
-		<div class="content">
-			<h1>Navigate Your Path, Discover<br/>the Beauty of CIT-U</h1>
-			<p>
-				TeknoFinder, your guide to CIT-U. Easily find classrooms,<br/>
-				buildings, and events with real-time navigation. Explore the<br/>
-				campus confidently and never get lost!
-			</p>
-			<button class="get-started-btn">
-				<a href="../../user-authorization/templates/login-selection.html">
-					Get Started !
-				</a>
-			</button>
+	<!-- Image Slider Section -->
+	<section class="image-slider-section">
+		<div class="slider">
+			<div class="list">
+				<div class="item active">
+					<img src="../img/slider-image-one.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>CIT-U<br/>Gymnasium</h2>
+						<p>
+							Is a state-of-the-art facility designed for sports and events. It<br/>
+							serves as the heart of CIT-U’s athletic activities, hosting
+							basketball<br/>games, volleyball tournaments, and other university events.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-two.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>CIT-U Main<br/>Library</h2>
+						<p>
+							Is an essential resource for students and faculty,offering a wide<br/>range
+							of academic resources, study spaces, and a peaceful<br/>environment for
+							learning and research.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-three.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>Main Library -<br/>LRAC</h2>
+						<p>
+							Is dedicated to enhancing students' academic experiences,<br/>
+							providing digital resources, interactive study spaces, and<br/>
+							multimedia equipment.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-four.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>Main Library -<br/>Wall of Fame</h2>
+						<p>
+							Honors outstanding students and alumni who have excelled<br/>academically
+							and contributed significantly to various fields,<br/>inspiring current
+							students to achieve greatness.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-five.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>CIT-U<br/>Makerspace</h2>
+						<p>
+							Is an innovation hub where students, faculty, and entrepreneurs<br/>
+							collaborate on various projects, from 3D printing to electronics
+							prototyping, fostering creativity and hands-on learning.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-six.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>Wildcats<br/>Innovation Lab</h2>
+						<p>
+							Is a cutting-edge space at CIT-U that encourages students to<br/>experiment
+							with new technologies, tools, and ideas. It serves as a<br/>launchpad for
+							entrepreneurial endeavors and tech-driven projects.
+						</p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-seven.jpg">
+					<div class="content">
+						<p>FEATURED LOCATIONS</p>
+						<h2>NGE Case<br/>Room</h2>
+						<p>
+							Is a dedicated space for students at CIT-U, where they can<br/>attend
+							lectures and work on practical projects, case studies, and presentations
+							to apply their learning in real-world scenarios.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="arrows">
+				<button id="prev"><</button>
+				<button id="next">></button>
+			</div>
+			
+			<div class="thumbnail">
+				<div class="item active">
+					<img src="../img/slider-image-one.jpg">
+					<div class="content">
+						CIT-U<br/>Gymnasium
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-two.jpg">
+					<div class="content">
+						CIT-U Main<br/>Library
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-three.jpg">
+					<div class="content">
+						Main<br/>Library -<br/>LRAC
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-four.jpg">
+					<div class="content">
+						Main<br/>Library - Wall of Fame
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-five.jpg">
+					<div class="content">
+						CIT-U<br/>Makerspace
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-six.jpg">
+					<div class="content">
+						Wildcats<br/>Innovation Lab
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="../img/slider-image-seven.jpg">
+					<div class="content">
+						NGE<br/>Case<br/>Room
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<!-- CIT U in 360 Section -->
-	<section id="howItWorks" class="citu-360">
+	<section id="citu360" class="citu-360">
 		<iframe src="https://www.youtube.com/embed/tIwudijrMEw" 
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
 		</iframe>
-	</section>
-
-	<!-- CITU Map Section -->
-	<section id="cituMap" class="citu-map-section">
-		<div class="img-box">
-			<img src="../img/citumap-img.png" alt="Map">
-		</div>
+		
 		<div class="content">
-			<img src="../img/teknofinder-logo.png">
-			<h1>Explore CIT-U with TeknoFinder</h1>
+			<h1>Explore CIT-U in 360</h1>
 			<p>
-				Navigate CIT-U effortlessly with our<br/>
-				interactive map. Access key locations, building<br/>
-				information, and real-time event<br/>
-				updates. With TeknoFinder, you’ll always<br/>
-				know where to go!<br/>
+				Immerse yourself in CIT-U with our 360° exploration feature, giving
+				you a detailed<br/>look at all the important spots on campus. From classrooms
+				to landmarks, get a<br/>complete view of what CIT-U has to offer before you
+				even arrive.
 			</p>
 		</div>
 	</section>
 	
-	<!-- Visit Now Section -->
-	<section class="visit-now-section">
-		<div class="content">
-			<h1>Come and experience the vibrant and<br/>dynamic atmosphere of CIT University.</h1>
+	<!-- Campus Section -->
+	<section class="campus-section">
+		<div class="campus-section-left">
+			<img src="../img/campus-img.png"/>
+		</div>
+		
+		<div class="campus-section-right">
+			<h1>Navigate the Official<br/>CIT-U Campus Map</h1>
+			<hr/>
 			<p>
-				Located at N. Bacalso Ave., Cebu City, Philippines, our campus offers top-notch academic<br/>
-				programs, state-of-the-art facilities, and a diverse community of students and faculty.
+				Navigate the entire CIT-U campus effortlessly<br/>with our detailed, up-to-date
+				map. Find key<br/>buildings, facilities, and landmarks easily,<br/>whether you’re
+				looking for classrooms, offices,<br/>or recreational areas, and make the most of<br/>
+				your time on campus.
 			</p>
-			<button class="get-started-btn">Visit Now !</button>
 		</div>
 	</section>
 	
@@ -115,18 +258,18 @@
 			<div class="flc-right-content">
 				<h3>Product</h3>
 				<ul>
-					<li><a href="../templates/landing-home.html">Overview</a></li>
-					<li><a href="../templates/landing-features.html">Features</a></li>
-					<li><a href="#howItWorks" id="howItWorksLink">How It Works?</a></li>
-					<li><a href="#cituMap" id="visualMapLink">Visual Map</a></li>
+					<li><a href="../templates/main-home.html">Overview</a></li>
+					<li><a href="#citu360" id="citu360Link">CIT-U 360</a></li>
+					<li><a href="../templates/main-teknomap.html">TeknoMap</a></li>
+					<li><a href="../templates/main-confessions.html">Confessions</a></li>
 				</ul>
 			</div>
 			  
 			<div class="flc-right-content">
 				<h3>Company</h3>
 				<ul>
-					<li><a href="../templates/landing-aboutus.html">About Us</a></li>
-					<li><a href="../templates/landing-contactus.html">Contact Us</a></li>
+					<li><a href="../templates/main-aboutus.html">About Us</a></li>
+					<li><a href="../templates/main-contactus.html">Contact Us</a></li>
 				</ul>
 			</div>			
 		</div>
@@ -134,6 +277,6 @@
 		<div class="footer-right-container"></div>
 	</footer>
 	
-	<script src="../js/landing-page.js" defer></script>
+	<script src="../js/main-page.js" defer></script>
 </body>
 </html>

@@ -1,38 +1,3 @@
-/* Footer Functions */
-
-document.addEventListener("DOMContentLoaded", function () {
-	const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-	window.addEventListener("scroll", () => {
-		if (window.scrollY > 300) {
-		  scrollToTopBtn.style.display = "block";
-		} else {
-		  scrollToTopBtn.style.display = "none";
-		}
-	});
-
-	scrollToTopBtn.addEventListener("click", () => {
-		window.scrollTo({
-		  top: 0,
-		  behavior: "smooth",
-		});
-	});
-});
-
-
-const howItWorksLink = document.getElementById("citu360Link");
-const howItWorksSection = document.getElementById("citu360");
-
-howItWorksLink.addEventListener("click", function (event) {
-	event.preventDefault();
-
-	howItWorksSection.scrollIntoView({
-		behavior: "smooth", 
-		block: "start" 
-	});
-});
-
-/* Image Slider */
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -57,12 +22,10 @@ prev.onclick = function(){
     }
     showSlider();
 }
-
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
 }, 5000)
-
 function showSlider(){
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
@@ -81,7 +44,6 @@ function showSlider(){
         next.click();
     }, 5000)
 }
-
 function setPositionThumbnail () {
     let thumbnailActive = document.querySelector('.thumbnail .item.active');
     let rect = thumbnailActive.getBoundingClientRect();
