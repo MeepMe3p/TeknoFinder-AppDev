@@ -1,0 +1,528 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Anybody', sans-serif;
+	margin: 0;
+	padding: 0;
+	//background-color: grey;
+	color: black;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	font-family: 'Anybody', sans-serif;
+	border: none;
+}
+
+/* Header Section */
+header {
+	background-color: white;
+	color: black;
+	padding: 0 80px;
+	text-align: center;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    padding: 30px 0px;
+    font-size: 21px;
+	//border: 1px solid blue;
+}
+
+.navbar nav ul a {
+    padding: 30px 20px;
+    font-size: 21px;
+	//border: 1px solid yellow;
+}
+
+.navbar nav ul li .current-page {
+	color: #F6C302;
+	font-weight: bold;
+}
+
+.navbar nav ul li .current-page::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 9px;
+    background-color: #f6c302;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.navbar nav ul li .hoverable::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+	transform: translateX(-50%);
+    height: 9px;
+    background-color: #88343b;
+    transition: width 0.3s ease;
+}
+
+.navbar nav ul li .hoverable:hover::after {
+	color: #88343b;
+    width: 90%;
+}
+
+.navbar nav ul li .hoverable:hover {
+	color: #88343b;
+}
+
+.auth-buttons button {
+	margin-left: 20px;
+	padding: 15px 30px;
+	border-radius: 15px;
+	font-family: 'Anybody', sans-serif;
+	font-size: 20px;
+}
+
+.signup-btn {
+	background-color: #ae3c3c;
+	color: white;
+	border: none;
+	transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+	background-color: #601325;
+}
+
+.login-btn {
+	background-color: white;
+	color: grey;
+	border: 1px solid grey;
+	transition: background-color 0.3s ease,
+				color 0.3s ease,
+				border 0.3s ease;
+}
+
+.login-btn:hover {
+	background-color: white;
+	color: #f6c302;
+	border: 1px solid #f6c302;
+}
+
+/* Get Started Section */
+.get-started-section {
+	background-image: 
+		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
+								rgba(124, 124, 124, 0.7) 25%,
+								rgba(0, 0, 0, 0.60) 35%,
+								rgba(0, 0, 0, 0.60) 65%,
+								rgba(124, 124, 124, 0.7) 75%,
+								rgba(255, 255, 255, 1) 100%),
+		url("../img/get-started-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: auto;
+	aspect-ratio: 1 / 0.5; 
+}
+
+.get-started-section .content h1 {
+	font-size: 85px;
+	font-weight: bold;
+	color: #f6c302;
+	line-height: 1.3;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.get-started-section .content p {
+	font-size: 26px;
+	margin: 40px 0px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.get-started-btn {
+	background-color: #88343b;
+	color: white;
+	padding: 25px 50px;
+	border-radius: 50px;
+	font-size: 30px;
+	border: none;
+	transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+	background-color: #f6c302;
+	color: black;
+}
+
+/* How It Works Section */
+.how-it-works {
+	background: white;
+	text-align: center;
+	padding: 50px 20px;
+	margin-top: -1px;
+}
+
+.how-it-works .header {
+	margin: 70px 0;
+	margin-bottom: 90px;
+}
+
+.how-it-works .header h2 {
+	font-size: 50px;
+	letter-spacing: 4px;
+}
+
+.how-it-works .header p {
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 1.6;
+}
+
+.steps {
+	display: flex;
+	//gap: 40px;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.steps .step {
+	//border: 1px solid black;
+	margin: 0 40px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	//gap: 40px;
+	justify-content: center;
+	text-align: center;
+}
+
+.step .img-box {
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+	border: 0.5px solid lightgrey;
+	background: linear-gradient(45deg, #88343b, #f6c302);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	transition: background-color 0.3s ease; 
+}
+
+.step .img-box:hover {
+	background: linear-gradient(45deg, #88343b, #f6c302);
+}
+
+.step img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+	border-radius: 30px;
+}
+
+.step .img-box:hover img {
+	transform: scale(0.8);
+	border-radius: 23px;
+	border: 10px solid white;
+}
+
+.step h3 {
+	//border: 1px solid blue;
+	max-width: 300px;
+	font-size: 27px;
+	margin: 25px 0;
+	line-height: 1.2;
+}
+
+.step .step-set {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	margin-bottom: 30px;
+}
+
+.step .step-set i{
+	font-size: 15px;
+}
+
+#current {
+	color: #f6c302;
+}
+
+#not-current {
+	color: rgba(136, 52, 59, 0.5);
+}
+
+.step p {
+	//border: 1px solid blue;
+	max-width: 300px;
+	margin: 0;
+	font-size: 21px;
+}
+
+/* Interactive Map Section */
+.citu-map-section {
+	display: flex;
+	gap: 20px;
+	padding: 100px 50px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	//border: 1px solid yellow;
+	position: relative;
+	z-index: 0;
+}
+
+.citu-map-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: 
+		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
+								rgba(230, 230, 230, 0.7) 10%,
+								rgba(255, 255, 255, 0) 35%,
+								rgba(255, 255, 255, 0) 65%,
+								rgba(230, 230, 230, 0.7) 90%,
+								rgba(255, 255, 255, 1) 100%),
+		url("../img/explore-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.citu-map-section .img-box {
+	width: 550px;
+	border-radius: 30px;
+	border: 1px solid white;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 4px 20px rgba(136, 52, 59, 0.5);
+}
+
+.citu-map-section .img-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+	transition: opacity 0.3s ease;
+}
+
+.citu-map-section .img-box:hover {
+	background-image: url("../img/map-point.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.citu-map-section .img-box:hover img {
+	opacity: 0;
+}
+
+.citu-map-section .content {
+	//border: 1px solid blue;
+	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.citu-map-section .content img {
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.citu-map-section .content h1 {
+	font-size: 55px;
+	letter-spacing: 4px;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 1000px;
+	color: #601420;
+}
+
+
+.citu-map-section .content p {
+	font-size: 23px;
+	letter-spacing: 1px;
+	line-height: 1.6;
+	
+}
+
+/* Visit Now Section */
+.visit-now-section {
+	background-image: 
+		linear-gradient(to top, rgba(255, 255, 255, 1) 0%,
+								rgba(230, 230, 230, 0.7) 20%,
+								rgba(255, 255, 255, 0.5) 35%,
+								rgba(255, 255, 255, 0.5) 65%,
+								rgba(230, 230, 230, 0.7) 80%,
+								rgba(255, 255, 255, 1) 100%),
+		url("../img/visit-now-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
+	background-border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: auto;
+	aspect-ratio: 1 / 0.35;
+	margin: 55px 0;	
+}
+
+.visit-now-section h1{
+	background: linear-gradient(90deg, #601420, #c59b02, #601420);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 70px;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.visit-now-section p{
+	font-size: 26px;
+	line-height: 1.3;
+	margin: 40px 0px;
+}
+
+/* Footer Section */
+footer {
+	background: #88343b;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+}
+
+.footer-left-container {
+	width: 70%;
+	padding: 50px;
+	display: flex;
+	padding-left: 80px;
+	padding-top: 60px;
+}
+
+.flc-left-content {
+	margin-right: 180px;
+}
+
+.flc-left-content img {
+	margin-bottom: 60px;
+}
+
+.flc-left-content button {
+	border: 3px solid transparent;
+	border-radius: 20px;
+	background-color: white;
+	padding: 8px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: border 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.flc-left-content button:hover {
+	border-color: white;
+	background-color: transparent;
+	color: white;
+}
+
+.flc-left-content button i {
+	margin-right: 5px;
+}
+
+.flc-left-content p {
+	//border: 1px solid blue;
+	margin-top: 30px;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.flc-right-content {
+	width: 200px;
+	margin-right: 100px;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+}
+
+.flc-right-content h3 {
+	letter-spacing: 2.5px;
+	margin: 0;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer ul li {
+	display: flex;
+	margin-bottom: 16px;
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 20px;
+	transition: color 0.3s ease;
+}
+
+footer ul li:hover {
+	color: #f6c302;
+	font-weight: bold;
+}
+
+.footer-right-container {
+	width: 30%;
+	background-image: url("../img/teknofinder-logo-other.png");
+	background-size: 130%;
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+	background-position: left; /* Centers the image */
+}
