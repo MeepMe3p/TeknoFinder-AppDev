@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj": {}
+    "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj": {
+    "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj",
         "projectName": "AppDev.API",
-        "projectPath": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj",
-        "packagesPath": "C:\\Users\\avril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\obj\\",
+        "projectPath": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\avril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

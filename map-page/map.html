@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <button onclick="AddWaypoint()"> Add Waypoint </button>
+        <button onclick="GetWaypoint()"> Get Waypoint </button>
+    </body>
+
+    <script>
+        function AddWaypoint(){
+            console.log(
+                fetch(`http://localhost:5099/api/Waypoints`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        waypointName: "Elijah",
+                        waypointType: "Sabay",
+                        pointX: 33,
+                        pointY: 55
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(json => console.log(json))
+                .catch(error => console.error('Error:', error))
+            );
+        }
+
+        function GetWaypoint(){
+            console.log(
+                fetch(`http://localhost:5099/api/Waypoints`,{
+                    method:'GET',
+                    headers:{
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+                .then(json => console.log(json))
+            )
+        }
+    </script>
+</html>

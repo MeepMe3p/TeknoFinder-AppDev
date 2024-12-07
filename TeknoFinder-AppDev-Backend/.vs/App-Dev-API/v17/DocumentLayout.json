@@ -1,41 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\",
+  "WorkspaceRootPath": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\models\\datatransferobject\\waypoint\\waypointdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\datatransferobject\\waypoint\\waypointdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\models\\entities\\waypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\entities\\waypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\models\\mapper\\waypointmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\mapper\\waypointmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\controllers\\waypointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\controllers\\waypointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\controllers\\waypointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\models\\datatransferobject\\waypoint\\waypointdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\datatransferobject\\waypoint\\waypointdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\models\\entities\\waypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\entities\\waypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\models\\mapper\\waypointmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\models\\mapper\\waypointmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\avril\\onedrive\\desktop\\api\\app-dev-api\\migrations\\20241120061706_fifth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\migrations\\20241120061706_fifth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\migrations\\20241120061706_fifth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,36 +59,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDev.API",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj",
-              "RelativeDocumentMoniker": "App-Dev-API\\AppDev.API.csproj",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\AppDev.API.csproj",
-              "RelativeToolTip": "App-Dev-API\\AppDev.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-20T06:37:28.442Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\appsettings.json",
+              "RelativeDocumentMoniker": "App-Dev-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\appsettings.json",
+              "RelativeToolTip": "App-Dev-API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-07T08:04:43.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Program.cs",
+              "RelativeDocumentMoniker": "App-Dev-API\\Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Program.cs",
+              "RelativeToolTip": "App-Dev-API\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T07:47:01.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "20241120062349_sixth-migration.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "RelativeToolTip": "App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:23:49.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T06:23:49.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "20241120061706_fifth-migration.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
               "RelativeToolTip": "App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +107,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "App-Dev-API\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAAADwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,11 +119,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "WaypointsController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\WaypointsController.cs",
+              "RelativeDocumentMoniker": "App-Dev-API\\Controllers\\WaypointsController.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\WaypointsController.cs",
+              "RelativeToolTip": "App-Dev-API\\Controllers\\WaypointsController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAtwA8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:12:04.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDev.API.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj",
+              "RelativeDocumentMoniker": "App-Dev-API\\AppDev.API.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj",
+              "RelativeToolTip": "App-Dev-API\\AppDev.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAnwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T06:37:28.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "WaypointMapper.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
               "RelativeToolTip": "App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,11 +156,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Waypoint.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\Entities\\Waypoint.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Entities\\Waypoint.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\Entities\\Waypoint.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\Entities\\Waypoint.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Entities\\Waypoint.cs",
               "RelativeToolTip": "App-Dev-API\\Models\\Entities\\Waypoint.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -124,11 +168,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "WaypointDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
               "RelativeToolTip": "App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -136,27 +180,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "App-Dev-API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAAADcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T04:59:26.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WaypointsController.cs",
-              "DocumentMoniker": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Controllers\\WaypointsController.cs",
-              "RelativeDocumentMoniker": "App-Dev-API\\Controllers\\WaypointsController.cs",
-              "ToolTip": "C:\\Users\\avril\\OneDrive\\Desktop\\API\\App-Dev-API\\Controllers\\WaypointsController.cs",
-              "RelativeToolTip": "App-Dev-API\\Controllers\\WaypointsController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwDUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T03:12:04.788Z"
             }
           ]
         }
