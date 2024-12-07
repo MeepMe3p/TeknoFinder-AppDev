@@ -1,5 +1,6 @@
 <html>
     <head>
+<<<<<<< HEAD
         <!-- Leaflet CSS -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -24,10 +25,18 @@
             <button onclick="AddWaypoint()"> Add Waypoint </button>
         </div>
         
+=======
+
+    </head>
+
+    <body>
+        <button onclick="AddWaypoint()"> Add Waypoint </button>
+>>>>>>> 88e404b (map test)
         <button onclick="GetWaypoint()"> Get Waypoint </button>
     </body>
 
     <script>
+<<<<<<< HEAD
         var imageUrl = 'NGE_test.png';
         var imageBounds = [[0,0], [234,153]]; 
         var map = L.map('map').setView([0, 0], 13);
@@ -79,16 +88,27 @@
             
             console.log(
                 
+=======
+        function AddWaypoint(){
+            console.log(
+>>>>>>> 88e404b (map test)
                 fetch(`http://localhost:5099/api/Waypoints`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
+<<<<<<< HEAD
                         waypointName: name,
                         waypointType: "PathNode",
                         pointX: coordX,
                         pointY: coordY
+=======
+                        waypointName: "Elijah",
+                        waypointType: "Sabay",
+                        pointX: 33,
+                        pointY: 55
+>>>>>>> 88e404b (map test)
                     })
                 })
                 .then(response => {
@@ -104,10 +124,22 @@
 
         function GetWaypoint(){
             console.log(
+<<<<<<< HEAD
                 
             )
             L.marker([1,1]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
             .openPopup();
+=======
+                fetch(`http://localhost:5099/api/Waypoints`,{
+                    method:'GET',
+                    headers:{
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+                .then(json => console.log(json))
+            )
+>>>>>>> 88e404b (map test)
         }
     </script>
 </html>
