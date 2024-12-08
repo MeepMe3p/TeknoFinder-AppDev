@@ -1,26 +1,94 @@
 <html>
     <head>
-
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <!-- Leaflet javascript-->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
     </head>
 
     <body>
-        <button onclick="AddWaypoint()"> Add Waypoint </button>
+        <div id="map" style="height: 600px; width: 600px;"></div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="coordX">X coordinate: </label>
+            <input type="text" id="coordX" name="coordX">
+            
+            <label for="coordY">Y coordinate: </label>
+            <input type="text" id="coordY" name="coordY">
+            <button onclick="AddWaypoint()"> Add Waypoint </button>
+        </div>
+        
         <button onclick="GetWaypoint()"> Get Waypoint </button>
     </body>
 
     <script>
+        var imageUrl = 'NGE_test.png';
+        var imageBounds = [[0,0], [234,153]]; 
+        var map = L.map('map').setView([0, 0], 13);
+        
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
+
+
+        map.on('click', function(e) {
+            var latlng = e.latlng; // Get the latitude and longitude of the clicked point
+            console.log("You clicked at: " + latlng.lat + ", " + latlng.lng);
+
+            // Optionally add a marker at the clicked position
+            L.marker(latlng).addTo(map);
+        });
+
+        const PathNodes = [];
+        fetch(`http://localhost:5099/api/Waypoints`,{
+                    method:'GET',
+                    headers:{
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+                .then(markers => {
+                    console.log(markers)
+                    let count = 0
+                    markers.forEach(marker => {
+                    const { pointX, pointY, waypointName } = marker; // Destructure the data
+
+                   
+                    PathNodes[count] = L.marker([pointX, pointY]).addTo(map)
+                        .bindPopup(`<b>${waypointName}</b>`);
+                    
+                    count++
+                    });
+                    
+                    var Paths = L.layerGroup(PathNodes)
+                    Paths.addTo(map)
+                })
+            
+                
+            
+
         function AddWaypoint(){
+            const name = document.getElementById('name').value;
+            const coordX = document.getElementById('coordX').value;
+            const coordY = document.getElementById('coordY').value;
+            
             console.log(
+                
                 fetch(`http://localhost:5099/api/Waypoints`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        waypointName: "Elijah",
-                        waypointType: "Sabay",
-                        pointX: 33,
-                        pointY: 55
+                        waypointName: name,
+                        waypointType: "PathNode",
+                        pointX: coordX,
+                        pointY: coordY
                     })
                 })
                 .then(response => {
@@ -36,15 +104,10 @@
 
         function GetWaypoint(){
             console.log(
-                fetch(`http://localhost:5099/api/Waypoints`,{
-                    method:'GET',
-                    headers:{
-                        'Content-Type': 'application/json',
-                    }
-                })
-                .then(response => response.json())
-                .then(json => console.log(json))
+                
             )
+            L.marker([1,1]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
+            .openPopup();
         }
     </script>
 </html>
