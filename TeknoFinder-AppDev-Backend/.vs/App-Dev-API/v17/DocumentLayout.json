@@ -4,34 +4,50 @@
   "Documents": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
 >>>>>>> 88e404b (map test)
+=======
+>>>>>>> 839da9b (Map on Waypoints)
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\controllers\\waypointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\controllers\\waypointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 839da9b (Map on Waypoints)
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\migrations\\20241120061706_fifth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\migrations\\20241120061706_fifth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\migrations\\20241120062349_sixth-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\appdev.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\models\\datatransferobject\\waypoint\\waypointdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,6 +64,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
 >>>>>>> 88e404b (map test)
     },
     {
@@ -85,6 +102,8 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|c:\\users\\user1\\documents\\github\\teknofinder-appdev\\teknofinder-appdev-backend\\app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D87449-84FB-42EB-9C02-299ACC90F8FB}|App-Dev-API\\AppDev.API.csproj|solutionrelative:app-dev-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+>>>>>>> 839da9b (Map on Waypoints)
     }
   ],
   "DocumentGroupContainers": [
@@ -98,6 +117,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 4,
 =======
@@ -116,11 +136,15 @@
               "$type": "Document",
               "DocumentIndex": 2,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 4,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Program.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Program.cs",
               "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Program.cs",
               "RelativeToolTip": "App-Dev-API\\Program.cs",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,25 +167,32 @@
               "DocumentIndex": 2,
 =======
               "ViewState": "AQIAAAcAAAAAAAAAAAAiwBsAAAAAAAAA",
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+>>>>>>> 839da9b (Map on Waypoints)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T07:47:01.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "20241120062349_sixth-migration.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
               "RelativeToolTip": "App-Dev-API\\Migrations\\20241120062349_sixth-migration.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T06:23:49.97Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 10,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 2,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "20241120061706_fifth-migration.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Migrations\\20241120061706_fifth-migration.cs",
@@ -174,10 +205,14 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 1,
 =======
               "DocumentIndex": 5,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 1,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Data\\ApplicationDbContext.cs",
@@ -190,20 +225,28 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 0,
 =======
               "DocumentIndex": 1,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 0,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "WaypointsController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\WaypointsController.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Controllers\\WaypointsController.cs",
               "ToolTip": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\WaypointsController.cs",
               "RelativeToolTip": "App-Dev-API\\Controllers\\WaypointsController.cs",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "ViewState": "AQIAABkAAAAAAAAAAAD4vyAAAAAMAAAA",
 =======
               "ViewState": "AQIAAAkAAAAAAAAAAAAtwA8AAABNAAAA",
 >>>>>>> 88e404b (map test)
+=======
+              "ViewState": "AQIAABkAAAAAAAAAAAD4vyAAAAAMAAAA",
+>>>>>>> 839da9b (Map on Waypoints)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T03:12:04.788Z",
               "EditorCaption": ""
@@ -211,6 +254,9 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 839da9b (Map on Waypoints)
               "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\appsettings.json",
@@ -224,9 +270,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+<<<<<<< HEAD
 =======
               "DocumentIndex": 3,
 >>>>>>> 88e404b (map test)
+=======
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "AppDev.API.csproj",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\AppDev.API.csproj",
               "RelativeDocumentMoniker": "App-Dev-API\\AppDev.API.csproj",
@@ -239,10 +288,14 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 9,
 =======
               "DocumentIndex": 8,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 9,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "WaypointMapper.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\Mapper\\WaypointMapper.cs",
@@ -255,10 +308,14 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 8,
 =======
               "DocumentIndex": 7,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 8,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "Waypoint.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\Entities\\Waypoint.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\Entities\\Waypoint.cs",
@@ -271,10 +328,14 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 7,
 =======
               "DocumentIndex": 6,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 7,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "WaypointDTOs.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Models\\DataTransferObject\\Waypoint\\WaypointDTOs.cs",
@@ -287,10 +348,14 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 10,
 =======
               "DocumentIndex": 9,
 >>>>>>> 88e404b (map test)
+=======
+              "DocumentIndex": 10,
+>>>>>>> 839da9b (Map on Waypoints)
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\GitHub\\TeknoFinder-AppDev\\TeknoFinder-AppDev-Backend\\App-Dev-API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "App-Dev-API\\Controllers\\UsersController.cs",
