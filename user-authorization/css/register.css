@@ -222,6 +222,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     overflow: visible;
+<<<<<<< HEAD
 }
 
 .register-container {
@@ -450,6 +451,8 @@ button {
 	background-position: center;
 	background-repeat: no-repeat;
 	//border: 1px solid purple;
+=======
+>>>>>>> bcb6f98 (added program and year level in register)
 }
 
 <<<<<<< HEAD
@@ -539,7 +542,8 @@ button {
 	padding-left: 15px;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
 	width: 100%;
 	padding: 17px 20px;
 	font-size: 20px;
@@ -558,11 +562,14 @@ button {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 20px;
 }
 
 .fullname .form-group {
 	width: 47%;
+}
+
+.form .btn-next {
+	margin-top: 20px;
 }
 
 .form .btn-register,
