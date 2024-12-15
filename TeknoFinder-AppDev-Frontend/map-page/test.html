@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Map with Dynamic Markers</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 500px;"></div>
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([51.505, -0.09], 13);
+
+        // Base layer
+        const streetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Create a Layer Group for dynamic markers
+        const markerLayer = L.layerGroup().addTo(map);
+
+        // Layer control with dynamic marker layer
+        const baseLayers = {
+            "Street Map": streetMap
+        };
+
+        const overlays = {
+            "Markers": markerLayer
+        };
+
+        L.control.layers(baseLayers, overlays).addTo(map);
+
+        // Listen for user clicks on the map
+        map.on('click', function(e) {
+            // Get the coordinates of the click
+            const { lat, lng } = e.latlng;
+
+            // Create a new marker at the clicked location
+            const newMarker = L.marker([lat, lng])
+                .bindPopup(`New Marker at (${lat.toFixed(2)}, ${lng.toFixed(2)})`);
+
+            // Add the marker to the layer group
+            markerLayer.addLayer(newMarker);
+
+            // Open the popup immediately
+            newMarker.openPopup();
+        });
+
+    </script>
+</body>
+</html>

@@ -42,126 +42,17 @@
     </body>
 
     <script>
-        class Graph {
-        constructor(predefinedEdges = []) {
-            this.adjacencyList = {};
-            // If predefined edges are provided, initialize the graph with them
-            if (predefinedEdges.length > 0) {
-                predefinedEdges.forEach(([vertex1, vertex2, weight]) => {
-                    this.addVertex(vertex1);
-                    this.addVertex(vertex2);
-                    this.addEdge(vertex1, vertex2, weight);
-                });
-            }
-        }
-
-        addVertex(vertex) {
-            if (!this.adjacencyList[vertex]) {
-            this.adjacencyList[vertex] = [];
-            }
-        }
-
-        addEdge(vertex1, vertex2, weight) {
-            this.adjacencyList[vertex1].push({ vertex: vertex2, weight });
-            this.adjacencyList[vertex2].push({ vertex: vertex1, weight });
-        }
-
-        getNeighbors(vertex) {
-            return this.adjacencyList[vertex];
-        }
-        
-        
-        dijkstra(start) {
-            // Init
-            const distances = {};
-            const previous = {};
-            const priorityQueue = new PriorityQueue();
-            
-            for (let vertex in this.adjacencyList) {
-                distances[vertex] = 0;
-                previous[vertex] = null;
-                priorityQueue.enqueue(vertex, 0);
-            }
-
-            distances[start] = 0;
-            priorityQueue.enqueue(start, 0);
-            
-            while (!priorityQueue.isEmpty()) {
-                const { value: currentVertex } = priorityQueue.dequeue();
-
-                // Check the neighbor
-                this.getNeighbors(currentVertex).forEach(neighbor => {
-                    const { vertex, weight } = neighbor;
-                    const alternativePath = distances[currentVertex] + weight;
-
-                    //if shorter, follow apth
-                    if (alternativePath < distances[vertex]) {
-                        distances[vertex] = alternativePath;
-                        previous[vertex] = currentVertex;
-                        priorityQueue.enqueue(vertex, alternativePath);
-                    }
-                });
-            }
-
-            return { distances, previous };
-        }
-
-        // Helper method to reconstruct the shortest path
-        getShortestPath(start, end) {
-            const { distances, previous } = this.dijkstra(start);
-            const path = [];
-            let currentVertex = end;
-
-            while (currentVertex) {
-            path.unshift(currentVertex);
-            currentVertex = previous[currentVertex];
-            }
-
-            // If the path exists, return it, otherwise return null
-            return path.length === 1 && path[0] === start ? [] : path;
-        }
-        }
-
-        // Priority Queue to handle the queue in Dijkstra's algorithm
-        class PriorityQueue {
-        constructor() {
-            this.items = [];
-        }
-
-        enqueue(value, priority) {
-            const newNode = { value, priority };
-            this.items.push(newNode);
-            this.items.sort((a, b) => a.priority - b.priority); // Sort by priority
-        }
-
-        dequeue() {
-            return this.items.shift(); // Remove and return the first item (with the lowest priority)
-        }
-
-        isEmpty() {
-            return this.items.length === 0;
-        }
-        }
-
-        const NGE_1Edges = [
-            ['A', 'B', 10],
-            ['B', 'C', 10],
-            ['C', 'A', 14],
-            ['C', 'D', 7],
-        ];
-
-        const g = new Graph(NGE_1Edges);
-        console.log('Adjacency List:', g.adjacencyList);
-
-        
-        const path = g.getShortestPath('A', 'D');
-        console.log('Shortest path from A to D:', path);
-
         var imageUrl = '../maps/NGE_test.png';
         var imageBounds = [[0,0], [234,153]]; 
-        var map = L.map('map').setView([0, 0], 13);
-        
+        const map = L.map('map').setView([0, 0], 13);
+        const UserLayer = L.layerGroup().addTo(map);
+        const PathLayer = L.layerGroup().addTo(map);
+        const Overlays = {
+            "Path Markers": PathLayer,
+            "User Markers": UserLayer
+        }
         L.imageOverlay(imageUrl, imageBounds).addTo(map);
+        L.control.layers(null, Overlays).addTo(map);
 
 
 
@@ -182,7 +73,14 @@
             });
 
             var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
-            marker.bindPopup("I am a user generated Marker!");
+            //very cursed popup code for the sake of UI/UX
+            marker.bindPopup(`
+            <div>
+                <p>I am a user generated marker!</p>
+                <button onclick="alert('Button clicked!')">Clear Me</button>
+                <button onclick="alert('Button clicked!')">Save Me</button>
+            </div>
+            `);
             return marker;
         }
 
@@ -219,9 +117,8 @@
         }
 
         function GetWaypoint(){
-            console.log(
-                    fetch(`http://localhost:5099/api/Waypoints`,{
-                        method:'GET',
+                fetch(`http://localhost:5099/api/Waypoints`,{
+                    method:'GET',
                     headers:{
                         'Content-Type': 'application/json',
                     }
@@ -231,21 +128,30 @@
                     console.log(markers)
                     let count = 0
                     markers.forEach(marker => {
-                    const { pointX, pointY, waypointName } = marker; // Destructure the data
+                    const { pointX, pointY, waypointName, waypointType } = marker; // Destructure the data
 
-                   
-                    PathNodes[count] = L.marker([pointX, pointY]).addTo(map)
+                    var customIcon = L.icon({
+                        iconUrl: '../assets/pathnode_icon.png',
+                        iconSize: [16, 16]
+                    });
+                    
+
+                    if(waypointType == 'PathNode'){
+                        PathNodes[count] = L.marker([pointX, pointY], { icon: customIcon }).addTo(map)
                         .bindPopup(`<b>${waypointName}</b>`);
+                        PathLayer.addLayer(PathNodes[count]);
+                    }else{
+                        var usermarker = CreateUserMarker(pointX, pointY);
+                        UserLayer.addLayer(usermarker);
+                    }
                     
                     count++
                     });
-                    
-                    var Paths = L.layerGroup(PathNodes)
-                    Paths.addTo(map)
-                }))
-            
-            L.marker([1,1]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
-            .openPopup();
+                })
+
+                for(node in PathNodes){
+                    console.log('Node #${index}: ${node}')
+                }
         }
     </script>
 </html>
