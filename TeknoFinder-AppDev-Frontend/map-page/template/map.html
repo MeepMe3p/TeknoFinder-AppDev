@@ -14,6 +14,7 @@
 
     <body>
         <div id="map_sidebar">
+            <img src="../assets/pathnode_icon.png">
             <p>test</p>
             <p>Another</p>
             <p>Other</p>
@@ -169,13 +170,21 @@
             console.log("You clicked at: " + latlng.lat + ", " + latlng.lng);
 
             // Optionally add a marker at the clicked position
-            L.marker(latlng).addTo(map);
+            var newMarker = CreateUserMarker(latlng.lat, latlng.lng).addTo(map);
         });
 
         const PathNodes = [];
         
-                
-            
+        function CreateUserMarker(lat, lng){
+            var customIcon = L.icon({
+                iconUrl: '../assets/marker.png',
+                iconSize: [32, 43]
+            });
+
+            var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
+            marker.bindPopup("I am a user generated Marker!");
+            return marker;
+        }
 
         function AddWaypoint(){
             const name = document.getElementById('name').value;
