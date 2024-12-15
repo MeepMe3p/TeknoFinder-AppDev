@@ -8,24 +8,36 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
+
+        <link rel="stylesheet" href="../css/map.css">
     </head>
 
     <body>
-        <div></div>
-        <div id="map" style="height: 600px; width: 600px;"></div>
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="coordX">X coordinate: </label>
-            <input type="text" id="coordX" name="coordX">
-            
-            <label for="coordY">Y coordinate: </label>
-            <input type="text" id="coordY" name="coordY">
-            <button onclick="AddWaypoint()"> Add Waypoint </button>
+        <div id="map_sidebar">
+            <p>test</p>
+            <p>Another</p>
+            <p>Other</p>
         </div>
         
-        <button onclick="GetWaypoint()"> Get Waypoint </button>
+        <div id="map"></div>
+        <div id="debug_menu">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="coordX">X coordinate: </label>
+                <input type="text" id="coordX" name="coordX">
+            
+                <label for="coordY">Y coordinate: </label>
+                <input type="text" id="coordY" name="coordY">
+                <button onclick="AddWaypoint()"> Add Waypoint </button>
+            </div>
+            
+
+            <button onclick="GetWaypoint()"> Get Waypoint </button>
+        </div>
+        
+        
     </body>
 
     <script>
@@ -144,7 +156,7 @@
         const path = g.getShortestPath('A', 'D');
         console.log('Shortest path from A to D:', path);
 
-        var imageUrl = 'NGE_test.png';
+        var imageUrl = '../maps/NGE_test.png';
         var imageBounds = [[0,0], [234,153]]; 
         var map = L.map('map').setView([0, 0], 13);
         

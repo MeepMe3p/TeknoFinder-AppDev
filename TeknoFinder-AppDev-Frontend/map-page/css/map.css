@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+  }
+
+#map_sidebar{
+    width: 120px; /* Set the width of the sidebar */
+    background-color: white; /* Background color for the sidebar */
+    color: #88343B; /* Text color for the sidebar */
+    display: flex; /* Use flexbox for content alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+#map{
+    flex: 1; /* Take up remaining space */
+    overflow: hidden; /* Prevent scrolling in this area */
+    height: 100vh; /* Make the image fill the viewport height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure it covers the space */
+}
+
+#debug_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+}
