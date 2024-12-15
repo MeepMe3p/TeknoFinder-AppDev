@@ -51,42 +51,149 @@
 		</div>
 	</header>
 
-	<!-- Profile Section -->
-	 <section class="profile-header-section">
-		<div class="content">
-				<h1>Kevin Josh Atay</h1>
-				<p>I am a lost wildcarr my room doko?</p>
-		</div>
-	 </section>
-
-	 <nav class="profile-navbar">
-		<ul>
-			<li><a href="">Personal Information</a></li>
-			<li><a href="">Saved Classroom</a></li>
-			<li><a href="">My Schedule</a></li>
-			<li><a href="">Profile Settings</a></li>
-		</ul>
-	</nav>
+	<section class="profile-section">
+		<div class="profile-section-header">
+			<div class="header-img">
+				<img src="../img/visit-now-bg.png">
+			</div>
 	
-	<!-- Profile Content -->
-	<div>
-		<div class="divider-container">
-			<h1 class="content-divider">Student's Personal Information</h1>
-		</div>
-		
-		<div class="profile-content-box">
+			<div class="profile-avatar">
+				<div>
+					<img src="../img/profile-avatar.png">
+				</div>
 
-		</div>
-		
-		<div class="divider-container">
-			<h1 class="content-divider">Student's Credential Information</h1>
-		</div>
-		<div class="profile-content-box">
+				<div class="identity">
+					<div class="identity-header">
+						<div>
+							<span class="fullname">{firstname + lastname}</span>
+							<span class="username">( {username} )</span>
+						</div>
+					</div>
 
+					<!-- Profile Section --><!--like if student siya "Campus Member" mabutang ara if dili "Guest" nalang-->
+					<span class="identifier">{identifier} of Cebu Institute of Technology - University</span>
+
+					<div class="identity-subcontent">
+						<div>
+							<i class="fa fa-envelope"></i>
+							<span class="email">{email}</span>
+						</div>
+
+						<div>
+							<i class="fa fa-clock"></i>
+							<span class="datecreated">{account date created}</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 	
+		<div class="tab-container">
+			<div class="profile-tab-section">
+				<div class="tab-buttons">
+					<button class="tab-header" data-tab="my-schedule" disabled>
+						<i class="fa fa-user"></i> My Profile
+					</button>					
+					<button class="tab-btn active" data-tab="personal-info">Personal Information</button>
+					<button class="tab-btn" data-tab="saved-classroom">Saved Classroom</button>
+					<button class="tab-btn" data-tab="my-schedule">My Schedule</button>
+					<button class="tab-btn" data-tab="profile-settings">Profile Settings</button>
+				</div>
+
+				<div class="tab-content">
+					<div class="tab-panel active" id="personal-info">
+						<h2 style="letter-spacing: 2px; margin-bottom: 30px;">
+							<i class="fa fa-user-circle" aria-hidden="true" style="margin-right: 5px;"></i> PERSONAL INFORMATION
+						</h2>
+						<div class="personal-info">
+							<div>
+								<span> STUDENT NO. </span>
+							</div>
+							<input value="{studentstatus}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> FIRST NAME </span>
+							</div>
+							<input value="{firstname}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> LAST NAME </span>
+							</div>
+							<input value="{lastname}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> CIT-U STUDENT </span>
+							</div>
+							<input value="{student status}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> PROGRAM </span>
+							</div>
+							<input value="{program}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> YEAR LEVEL </span>
+							</div>
+							<input value="{yearlevel}" disabled />
+						</div>
+					
+						<div class="personal-info">
+							<div>
+								<span> STATUS LEVEL </span>
+							</div>
+							<input value="{statuslevel}" disabled />
+						</div>
+					</div>
+					
+
+					<div class="tab-panel" id="saved-classroom">
+						<h2>Saved Classroom</h2>
+						<p>Details about saved classrooms go here.</p>
+					</div>
+
+					<div class="tab-panel" id="my-schedule">
+						<h2>My Schedule</h2>
+						<p>User’s schedule information goes here.</p>
+					</div>
+
+					<div class="tab-panel" id="profile-settings">
+						<h2>Profile Settings</h2>
+						<p>Settings and customization options go here.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
 	{% comment %} <script src="../../global js/jquery-3.7.1.min.js"></script>
 	<script src="../../main-page/js/main-page.js" defer></script> {% endcomment %}
+	-->
+
+	<script>
+		const tabButtons = document.querySelectorAll('.tab-btn');
+		const tabPanels = document.querySelectorAll('.tab-panel');
+
+		tabButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				tabButtons.forEach(btn => btn.classList.remove('active'));
+				tabPanels.forEach(panel => panel.classList.remove('active'));
+
+				button.classList.add('active');
+				const tabId = button.getAttribute('data-tab');
+				document.getElementById(tabId).classList.add('active');
+			});
+		});
+	</script>
 </body>
 </html>
