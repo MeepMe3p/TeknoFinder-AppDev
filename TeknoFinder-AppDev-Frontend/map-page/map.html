@@ -206,8 +206,23 @@
                     }
                 })
                 .then(response => response.json())
+                .then(markers => {
+                    console.log(markers)
+                    let count = 0
+                    markers.forEach(marker => {
+                    const { pointX, pointY, waypointName } = marker; // Destructure the data
+
+                   
+                    PathNodes[count] = L.marker([pointX, pointY]).addTo(map)
+                        .bindPopup(`<b>${waypointName}</b>`);
+                    
+                    count++
+                    });
+                    
+                    var Paths = L.layerGroup(PathNodes)
+                    Paths.addTo(map)
+                }))
             
-            )
             L.marker([1,1]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
             .openPopup();
         }
