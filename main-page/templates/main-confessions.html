@@ -50,6 +50,191 @@
 			</div>
 		</div>
 	</header>
+
+	<section class="confession-section">
+		<div class="confession-header">
+            <input type="text" class="search-bar" placeholder="Search Confessions...">
+            <button class="filter-btn">Search</button>
+        </div>
+
+        <div class="recent-posts-container">
+			<div class="con-subhead">
+            	<h2>Recent Confessions</h2>
+			</div>
+            <div class="recent-posts-slider">
+                <button class="slider-btn left-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="recent-posts">
+                    <div class="post-item">
+						<div class="profilepic-container">
+							<img src=".jpg" >
+						</div>
+						<!--template sa recent confessions-->
+						<div class="post-details">
+							<div class="detail-head">
+								<p class="post-text" style="letter-spacing: 1px;"><strong>{firstname + lastname}</strong></p>
+								<span>({username})</span>
+							</div>
+							<hr>
+                        	<p class="post-text">{confession content}</p>
+							<div class="datelocation">
+                        		<span class="post-info">{Building #, Floor #, Room #}</span>
+								<span class="post-info">{date | time}</span>
+							</div>
+						</div>
+                    </div>
+
+					<!--sample confessions-->
+					<div class="post-item">
+						<div class="profilepic-container">
+							<img src=".jpg" >
+						</div>
+						
+						<div class="post-details">
+							<div class="detail-head">
+								<p class="post-text" style="letter-spacing: 1px;"><strong>John Doe</strong></p>
+								<span>(@johndoe)</span>
+							</div>
+							<hr>
+                        	<p class="post-text">Had the weirdest encounter at the cafeteria.</p>
+							<div class="datelocation">
+                        		<span class="post-info">Building B, Floor 3</span>
+								<span class="post-info">12-12-2024 | 04:20</span>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <button class="slider-btn right-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="my-confessions-container">
+			<div class="con-subhead">
+    	        <h2>My Confessions</h2>
+            </div>
+			
+			<div class="recent-posts-slider">
+                <button class="slider-btn left-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="recent-posts">
+					<!--template sa my confessions-->
+                    <div class="post-item">
+						<div class="profilepic-container">
+							<img src=".jpg" >
+						</div>
+						<!--template sa recent confessions-->
+						<div class="post-details">
+							<div class="detail-head">
+								<p class="post-text" style="letter-spacing: 1px;"><strong>{firstname + lastname}</strong></p>
+								<span>({username})</span>
+								<i class="fa fa-trash" id="delete-icon"></i>
+							</div>
+							<hr>
+                        	<p class="post-text">{confession content}</p>
+							<div class="datelocation">
+                        		<span class="post-info">{Building #, Floor #, Room #}</span>
+								<span class="post-info">{date | time}</span>
+							</div>
+						</div>
+                    </div>
+
+                    <!--sample confessions-->
+					<div class="post-item">
+						<div class="profilepic-container">
+							<img src=".jpg" >
+						</div>
+						
+						<div class="post-details">
+							<div class="detail-head">
+								<p class="post-text" style="letter-spacing: 1px;"><strong>John Doe</strong></p>
+								<span>(@johndoe)</span>
+								<i class="fa fa-trash" id="delete-icon"></i>
+							</div>
+							<hr>
+                        	<p class="post-text">Had the weirdest encounter at the cafeteria.</p>
+							<div class="datelocation">
+                        		<span class="post-info">Building B, Floor 3</span>
+								<span class="post-info">12-12-2024 | 04:20</span>
+							</div>
+						</div>
+                    </div>
+
+					<div class="post-item">
+						<div class="profilepic-container">
+							<img src=".jpg" >
+						</div>
+						
+						<div class="post-details">
+							<div class="detail-head">
+								<p class="post-text" style="letter-spacing: 1px;"><strong>John Doe</strong></p>
+								<span>(@johndoe)</span>
+								<i class="fa fa-trash" id="delete-icon"></i>
+							</div>
+							<hr>
+                        	<p class="post-text">Had the weirdest encounter at the cafeteria.</p>
+							<div class="datelocation">
+                        		<span class="post-info">Building B, Floor 3</span>
+								<span class="post-info">12-12-2024 | 04:20</span>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <button class="slider-btn right-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="filters">
+			<div>
+				<h3>Filter by Location</h3>
+				<select class="building-filter">
+					<option value="all">Select Building</option>
+					<option value="A">NGE Building</option>
+					<option value="B">RTL Building</option>
+					<option value="C">GLE Building</option>
+				</select>
+				<select class="floor-filter">
+					<option value="all">Select Floor</option>
+				</select>
+				<select class="room-filter">
+					<option value="all">Select Room</option>
+				</select>
+
+				<button class="add-confessions-btn" id="openAddConfessionModal">Add Confessions</button>
+			</div>
+        </div>
+
+		<div id="addConfessionModal" class="modal">
+			<div class="modal-content">
+				<span class="close-btn" id="closeModal">&times;</span>
+				<h2 style="margin: 0; text-align: center; margin-bottom: 30px;">Add Your Confession</h2>
+				<form id="addConfessionForm">
+					<textarea id="confessionText" placeholder="Write your confession..." rows="4" required></textarea>
+					<button type="submit" class="submit-btn">Submit Confession</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="confession-results">
+			<div class="post-results">
+				<div class="post-item">
+					<div class="profilepic-container">
+						<img src=".jpg" >
+					</div>
+					<!--template sa results confessions-->
+					<div class="post-details">
+						<div class="detail-head">
+							<p class="post-text" style="letter-spacing: 1px;"><strong>{firstname + lastname}</strong></p>
+							<span>({username})</span>
+						</div>
+						<hr>
+						<p class="post-text">{confession content}</p>
+						<div class="datelocation">
+							<span class="post-info">{Building #, Floor #, Room #}</span>
+							<span class="post-info">{date | time}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
 	
 	<!-- Footer Section -->
 	<footer>
@@ -85,5 +270,111 @@
 	</footer>
 	
 	<script src="../js/main-page.js" defer></script>
+	<script>
+        const sliders = document.querySelectorAll('.recent-posts-slider');
+
+        sliders.forEach(slider => {
+            const leftBtn = slider.querySelector('.left-btn');
+            const rightBtn = slider.querySelector('.right-btn');
+            const posts = slider.querySelector('.recent-posts');
+
+            let scrollAmount = 0;
+            const scrollStep = 300;
+
+            rightBtn.addEventListener('click', () => {
+                posts.scrollLeft += scrollStep;
+            });
+
+            leftBtn.addEventListener('click', () => {
+                posts.scrollLeft -= scrollStep;
+            });
+        });
+		
+		const modal = document.getElementById("addConfessionModal");
+		const openModalBtn = document.getElementById("openAddConfessionModal");
+		const closeModalBtn = document.getElementById("closeModal");
+
+		openModalBtn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		closeModalBtn.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target === modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		document.getElementById('addConfessionForm').addEventListener('submit', function (event) {
+			event.preventDefault(); 
+			const confessionText = document.getElementById("confessionText").value;
+			if (confessionText) {
+				alert('Confession added: ' + confessionText);
+				modal.style.display = "none";
+			}
+		});
+
+		const buildingFilter = document.querySelector('.building-filter');
+		const floorFilter = document.querySelector('.floor-filter');
+		const roomFilter = document.querySelector('.room-filter');
+
+		const roomOptions = {
+			A: {
+				1: ['101', '102', '103', '104', '105'],
+				2: ['201', '202', '203', '204', '205'],
+				3: ['301', '302', '303', '304', '305'],
+				4: ['401', '402', '403', '404', '405']
+			},
+			B: {
+				1: ['101', '102', '103', '104', '105'],
+				2: ['201', '202', '203', '204', '205'],
+				3: ['301', '302', '303', '304', '305'],
+				4: ['401', '402', '403', '404', '405']
+			},
+			C: {
+				1: ['101', '102', '103', '104', '105'],
+				2: ['201', '202', '203', '204', '205'],
+				3: ['301', '302', '303', '304', '305'],
+				4: ['401', '402', '403', '404', '405']
+			}
+		};
+
+		buildingFilter.addEventListener('change', () => {
+			const selectedBuilding = buildingFilter.value;
+
+			floorFilter.innerHTML = '<option value="all">Select Floor</option>';
+			roomFilter.innerHTML = '<option value="all">Select Room</option>';
+
+			if (roomOptions[selectedBuilding]) {
+				const floors = Object.keys(roomOptions[selectedBuilding]);
+				floors.forEach(floor => {
+					const option = document.createElement('option');
+					option.value = floor;
+					option.textContent = `Floor ${floor}`;
+					floorFilter.appendChild(option);
+				});
+			}
+		});
+
+		floorFilter.addEventListener('change', () => {
+			const selectedBuilding = buildingFilter.value;
+			const selectedFloor = floorFilter.value;
+
+			roomFilter.innerHTML = '<option value="all">Select Room</option>';
+
+			if (roomOptions[selectedBuilding] && roomOptions[selectedBuilding][selectedFloor]) {
+				const rooms = roomOptions[selectedBuilding][selectedFloor];
+				rooms.forEach(room => {
+					const option = document.createElement('option');
+					option.value = room;
+					option.textContent = `Room ${room}`;
+					roomFilter.appendChild(option);
+				});
+			}
+		});
+    </script>
 </body>
 </html>
