@@ -28,3 +28,19 @@ body {
     justify-content: center;
     width: 100px;
 }
+
+.button_icon{
+    height: 60px;
+    width: 60px;
+}
+
+#top_half{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    justify-items: center;
+    text-align: center;
+}
+
+.sidebar_button{
+    padding: 10px;
+}
