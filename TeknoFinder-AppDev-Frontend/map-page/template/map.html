@@ -9,6 +9,9 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
         <link rel="stylesheet" href="../css/map.css">
     </head>
 
@@ -16,27 +19,27 @@
         <div id="map_sidebar">
             <img style="height: 80px; width: 80px;" src="../assets/teknofinder-logo.png">
             <div id="top_half">
-                <div class="sidebar_button">
-                    <img class="button_icon" src="../assets/pathnode_icon.png">
+                <div id="home" class="sidebar_button">
+                    <i style="font-size: 40px;" class="fas fa-home"></i>
                     <p>Home</p>
                 </div>
-                <div class="sidebar_button">
-                    <img class="button_icon" src="../assets/pathnode_icon.png">
+                <div id="navigator" class="sidebar_button">
+                    <i style="font-size: 40px;" class="fas fa-search"></i>
                     <p>Search</p>
                 </div>
-                <div class="sidebar_button">
-                    <img class="button_icon" src="../assets/pathnode_icon.png">
+                <div onclick="GetWaypoint()" class="sidebar_button">
+                    <i style="font-size: 40px;" class="fas fa-bookmark"></i>
                     <p>Saved</p>
                 </div>
                 <div class="sidebar_button">
-                    <img class="button_icon" src="../assets/pathnode_icon.png">
+                    <i style="font-size: 40px;" class="far fa-clock"></i>
                     <p>Schedule</p>
                 </div>
             </div>
 
             <div id="bottom_half">
                 <div class="sidebar_button">
-                    <img class="button_icon" src="../assets/pathnode_icon.png">
+                    <i style="font-size: 40px;" class="fa fa-user"></i>
                     <p>Profile</p>
                 </div>
             </div>
@@ -55,9 +58,6 @@
                 <input type="text" id="coordY" name="coordY">
                 <button onclick="AddWaypoint()"> Add Waypoint </button>
             </div>
-            
-
-            <button onclick="GetWaypoint()"> Get Waypoint </button>
         </div>
         
         
@@ -123,8 +123,8 @@
                         waypointType: "UserPin",
                         pointX: coordX,
                         pointY: coordY,
-                        Building: 0, 
-                        Floor: 1,
+                        Building: "NGE", 
+                        Floor: 0,
                     })
                 })
                 .then(response => {
@@ -175,5 +175,6 @@
                     console.log('Node #${index}: ${node}')
                 }
         }
+        
     </script>
 </html>
