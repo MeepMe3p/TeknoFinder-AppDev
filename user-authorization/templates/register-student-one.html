@@ -34,23 +34,49 @@
 				</div>
 
 				<form>
-					<div class="form-group">
-						<label for="username">Username</label>
-						<input type="username" id="username" placeholder="Enter your username" required>
-					</div>
-					
 					<div class="fullname">
 						<div class="form-group">
 							<label for="firstname">First Name</label>
-							<input type="firstname" id="firstname" placeholder="Enter your first name" required>
+							<input type="text" id="firstname" placeholder="Enter your first name" required>
 						</div>
-						
+				
 						<div class="form-group">
 							<label for="lastname">Last Name</label>
-							<input type="lastname" id="lastname" placeholder="Enter your last name" required>
+							<input type="text" id="lastname" placeholder="Enter your last name" required>
 						</div>
 					</div>
-					
+				
+					<div class="fullname">
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input type="text" id="username" placeholder="Enter your username" required>
+						</div>
+				
+						<div class="form-group">
+							<label for="yearlevel">Year Level</label>
+							<select id="yearlevel" required style="-webkit-appearance: none; -moz-appearance: none; appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=\'%23000\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\'><path d=\'M5 7l5 5 5-5z\'/></svg>') no-repeat right 15px center; background-size: 30px; color: #757575;" onchange="this.style.color='black'">
+								<option value="">Select year level...</option>
+								<option value="1st Year">1st Year</option>
+								<option value="2nd Year">2nd Year</option>
+								<option value="3rd Year">3rd Year</option>
+								<option value="4th Year">4th Year</option>
+							</select>
+						</div>
+					</div>
+				
+					<div class="form-group">
+						<label for="program">Program</label>
+						<select id="program" required style="-webkit-appearance: none; -moz-appearance: none; appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=\'%23000\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\'><path d=\'M5 7l5 5 5-5z\'/></svg>') no-repeat right 15px center; background-size: 30px; color: #757575;" onchange="this.style.color='black'">
+							<option value="">Select program...</option>
+							<option value="BS Computer Science">BS Computer Science</option>
+							<option value="BS Information Technology">BS Information Technology</option>
+							<option value="BS Civil Engineering">BS Civil Engineering</option>
+							<option value="BS Architecture">BS Architecture</option>
+							<option value="BS Nursing">BS Nursing</option>
+							<option value="BS Pharmacy">BS Pharmacy</option>
+						</select>
+					</div>
+				
 					<button class="btn-next">
 						<a href="../templates/register-student-two.html">
 							Next <i class="fa fa-arrow-right"></i>
@@ -61,7 +87,7 @@
 						<i class="fab fa-google"></i>
 						Register With Google
 					</button>
-				</form>
+				</form>				
 				
 				<p class="login-link">Already have an account? <a href="../templates/login-selection.html">Login Now</a></p>
 			</div>
