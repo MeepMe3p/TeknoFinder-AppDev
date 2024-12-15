@@ -33,11 +33,11 @@
             this.adjacencyList = {};
             // If predefined edges are provided, initialize the graph with them
             if (predefinedEdges.length > 0) {
-            predefinedEdges.forEach(([vertex1, vertex2, weight]) => {
-                this.addVertex(vertex1);
-                this.addVertex(vertex2);
-                this.addEdge(vertex1, vertex2, weight);
-            });
+                predefinedEdges.forEach(([vertex1, vertex2, weight]) => {
+                    this.addVertex(vertex1);
+                    this.addVertex(vertex2);
+                    this.addEdge(vertex1, vertex2, weight);
+                });
             }
         }
 
@@ -129,15 +129,14 @@
         }
         }
 
-        // Example usage with pre-defined edges:
-        const predefinedEdges = [
+        const NGE_1Edges = [
             ['A', 'B', 10],
             ['B', 'C', 10],
             ['C', 'A', 14],
             ['C', 'D', 7],
         ];
 
-        const g = new Graph(predefinedEdges);
+        const g = new Graph(NGE_1Edges);
         console.log('Adjacency List:', g.adjacencyList);
 
         
@@ -161,30 +160,7 @@
         });
 
         const PathNodes = [];
-        fetch(`http://localhost:5099/api/Waypoints`,{
-                    method:'GET',
-                    headers:{
-                        'Content-Type': 'application/json',
-                    }
-                })
-                .then(response => response.json())
-                .then(markers => {
-                    console.log(markers)
-                    let count = 0
-                    markers.forEach(marker => {
-                    const { pointX, pointY, waypointName } = marker; // Destructure the data
-
-                   
-                    PathNodes[count] = L.marker([pointX, pointY]).addTo(map)
-                        .bindPopup(`<b>${waypointName}</b>`);
-                    
-                    count++
-                    });
-                    
-                    var Paths = L.layerGroup(PathNodes)
-                    Paths.addTo(map)
-                })
-            
+        
                 
             
 
@@ -202,9 +178,11 @@
                     },
                     body: JSON.stringify({
                         waypointName: name,
-                        waypointType: "PathNode",
+                        waypointType: "UserPin",
                         pointX: coordX,
-                        pointY: coordY
+                        pointY: coordY,
+                        Building: 0, 
+                        Floor: 1,
                     })
                 })
                 .then(response => {
@@ -220,7 +198,14 @@
 
         function GetWaypoint(){
             console.log(
-                
+                    fetch(`http://localhost:5099/api/Waypoints`,{
+                        method:'GET',
+                    headers:{
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+            
             )
             L.marker([1,1]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
             .openPopup();

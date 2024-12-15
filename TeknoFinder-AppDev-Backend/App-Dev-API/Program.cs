@@ -95,11 +95,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseCors("AppDevCorsPolicy");
-<<<<<<< HEAD
-=======
 
-
->>>>>>> origin/initial-templates
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
