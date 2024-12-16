@@ -38,9 +38,10 @@ body {
 }
 
 #top_half{
-    height: 60vh;
+    border-top: 4px solid #88343B; /* Top border */
+    border-bottom: 4px solid #88343B; /* Bottom border */
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 240px;
     justify-items: center;
     text-align: center;
 }

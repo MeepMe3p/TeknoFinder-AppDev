@@ -92,7 +92,9 @@
         function CreateUserMarker(lat, lng){
             var customIcon = L.icon({
                 iconUrl: '../assets/marker.png',
-                iconSize: [32, 43]
+                iconSize: [32, 43],
+                iconAnchor: [16, 43],
+                popupAnchor: [0, -43]
             });
 
             var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
