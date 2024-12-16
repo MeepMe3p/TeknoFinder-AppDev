@@ -58,6 +58,7 @@
                 <input type="text" id="coordY" name="coordY">
                 <button onclick="AddWaypoint()"> Add Waypoint </button>
             </div>
+            <button onclick="DeleteWaypoint()">test</button>
         </div>
         
         
@@ -100,7 +101,7 @@
             <div>
                 <p>I am a user generated marker!</p>
                 <button onclick="alert('Button clicked!')">Clear Me</button>
-                <button onclick="alert('Button clicked!')">Save Me</button>
+                <button onclick="getInput()">Save Me</button>
             </div>
             `);
             return marker;
@@ -176,5 +177,28 @@
                 }
         }
         
+        function DeleteWaypoint(x, y){
+            fetch(`http://localhost:5099/api/Waypoints`,{
+                    method:'GET',
+                    headers:{
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+                .then(markers => {
+                    markers.forEach(marker => {
+                        if(marker.PointX == x && marker.PointY == y){
+                            console.log(user.id);  // Display user id in console
+                        }
+                    });
+                })
+        }
+
+        function getInput() {
+            var userInput = prompt('Please enter a number:');
+            if (userInput !== null) {
+            alert('You entered: ' + userInput);
+            }
+        }
     </script>
 </html>
