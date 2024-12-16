@@ -1,5 +1,5 @@
-/*
-const NGE_F1_Test = [
+
+const NGE_F1_Waypoint = [
     ['A', PathNodes[0]],
     ['B', PathNodes[0]],
     ['C', PathNodes[0]],
@@ -14,8 +14,26 @@ const NGE_F1_Test = [
     ['L', PathNodes[0]],
     ['M', PathNodes[0]],
 ]
-*/
 
+const NGE_F1_edges = [
+    ['A', 'B'],
+    ['A', 'M'],
+    ['B', 'C'],
+    ['B', 'D'],
+    ['D', 'E'],
+    ['D', 'F'],
+    ['F', 'G'],
+    ['G', 'H'],
+    ['H', 'I'],
+    ['H', 'J'],
+    ['J', 'K'],
+    ['K', 'L'],
+    ['L', 'M']
+]
+
+
+
+/*
 class Graph {
     constructor(predefinedEdges = []) {
         this.adjacencyList = {};
@@ -148,4 +166,4 @@ const NGE_F1_vertex = [
     ['K', 'L'],
     ['L', 'M'],
 ]
-
+*/

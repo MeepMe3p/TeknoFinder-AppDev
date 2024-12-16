@@ -7,6 +7,22 @@
 </head>
 <body>
     <div id="map" style="height: 500px;"></div>
+    <button onclick="setMarkerName()">Set Marker Name</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label for="dropdown">Please select a number:</label>
+            <select id="dropdown">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <button onclick="confirmSelection()">Confirm</button>
+        </div>
+    </div>
+
     <script>
         // Initialize the map
         const map = L.map('map').setView([51.505, -0.09], 13);
@@ -46,6 +62,39 @@
             newMarker.openPopup();
         });
 
+
+        function setMarkerName() {
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Show the modal
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+// Function to handle the confirm button click
+function confirmSelection() {
+    var userInput = document.getElementById("dropdown").value;
+    alert("You selected: " + userInput);
+    
+    // Close the modal after selection
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside the modal, close it
+window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
     </script>
 </body>
 </html>

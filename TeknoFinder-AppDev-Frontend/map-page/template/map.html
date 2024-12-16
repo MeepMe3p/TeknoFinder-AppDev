@@ -56,7 +56,6 @@
             
                 <label for="coordY">Y coordinate: </label>
                 <input type="text" id="coordY" name="coordY">
-                <button onclick="AddWaypoint()"> Add Waypoint </button>
             </div>
             <button onclick="DeleteWaypoint()">test</button>
         </div>
@@ -98,14 +97,27 @@
             });
 
             var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
-            //very cursed popup code for the sake of UI/UX
-            marker.bindPopup(`
-            <div>
-                <p>I am a user generated marker!</p>
-                <button onclick="alert('Button clicked!')">Clear Me</button>
-                <button onclick="getInput()">Save Me</button>
-            </div>
-            `);
+            //not very cursed popup code now for the sake of UI/UX
+            var pElement = document.createElement('p');
+            pElement.textContent = 'I am a user generated Marker!';
+            var popupContent = document.createElement('div');
+            var clearButton = document.createElement('button');
+            clearButton.innerHTML = "Clear Me";
+            clearButton.onclick = function () {
+                RemoveMarker(marker); //use delete for saved waypoints
+            };
+
+            var saveButton = document.createElement('button');
+            saveButton.innerHTML = "Save Me";
+            saveButton.onclick = function () {
+                setMarkerName(marker); //use edit for saved waypoints
+            };
+
+            popupContent.appendChild(pElement);
+            popupContent.appendChild(clearButton);
+            popupContent.appendChild(saveButton);
+
+            marker.bindPopup(popupContent);
             return marker;
         }
 
@@ -114,7 +126,7 @@
             const coordX = document.getElementById('coordX').value;
             const coordY = document.getElementById('coordY').value;
             
-            console.log(
+            console.log('Sending waypoint:', { name, coordX, coordY });
                 
                 fetch(`http://localhost:5099/api/Waypoints`, {
                     method: 'POST',
@@ -138,7 +150,7 @@
                 })
                 .then(json => console.log(json))
                 .catch(error => console.error('Error:', error))
-            );
+            
         }
 
         function GetWaypoint(){
@@ -196,11 +208,21 @@
                 })
         }
 
-        function getInput() {
+        function setMarkerName(marker) {
             var userInput = prompt('Please enter a number:');
             if (userInput !== null) {
-            alert('You entered: ' + userInput);
+                alert('You entered: ' + userInput);
             }
+
+            document.getElementById('name').value = userInput;
+            document.getElementById('coordX').value = marker.getLatLng().lng;
+            document.getElementById('coordY').value = marker.getLatLng().lat;
+            AddWaypoint();
+        }
+
+        function RemoveMarker(marker){
+            console.log(marker.getLatLng());
+            map.removeLayer(marker);
         }
     </script>
 </html>

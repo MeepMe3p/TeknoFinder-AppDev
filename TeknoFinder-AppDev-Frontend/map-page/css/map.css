@@ -24,10 +24,7 @@ body {
 }
 
 #debug_menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100px;
+    display: none;
 }
 
 
